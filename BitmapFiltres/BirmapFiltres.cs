@@ -11,9 +11,9 @@ using System.Xml.Linq;
 
 namespace BitmapFiltres
 {
-    public partial class Form1 : Form
+    public partial class BirmapFiltres : Form
     {
-        public Form1()
+        public BirmapFiltres()
         {
             InitializeComponent();
         }
