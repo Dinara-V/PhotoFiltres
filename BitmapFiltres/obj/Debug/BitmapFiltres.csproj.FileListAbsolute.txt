@@ -8,3 +8,13 @@ C:\Users\dina7\Desktop\ItStep\Fund\lesson52\BitmapFiltres\BitmapFiltres\obj\Debu
 C:\Users\dina7\Desktop\ItStep\Fund\lesson52\BitmapFiltres\BitmapFiltres\obj\Debug\BitmapFiltres.csproj.CoreCompileInputs.cache
 C:\Users\dina7\Desktop\ItStep\Fund\lesson52\BitmapFiltres\BitmapFiltres\obj\Debug\BitmapFiltres.exe
 C:\Users\dina7\Desktop\ItStep\Fund\lesson52\BitmapFiltres\BitmapFiltres\obj\Debug\BitmapFiltres.pdb
+C:\Users\dina7\Documents\GitHub\PhotoFiltres\BitmapFiltres\bin\Debug\BitmapFiltres.exe.config
+C:\Users\dina7\Documents\GitHub\PhotoFiltres\BitmapFiltres\bin\Debug\BitmapFiltres.exe
+C:\Users\dina7\Documents\GitHub\PhotoFiltres\BitmapFiltres\bin\Debug\BitmapFiltres.pdb
+C:\Users\dina7\Documents\GitHub\PhotoFiltres\BitmapFiltres\obj\Debug\BitmapFiltres.csprojAssemblyReference.cache
+C:\Users\dina7\Documents\GitHub\PhotoFiltres\BitmapFiltres\obj\Debug\BitmapFiltres.Properties.Resources.resources
+C:\Users\dina7\Documents\GitHub\PhotoFiltres\BitmapFiltres\obj\Debug\BitmapFiltres.csproj.GenerateResource.cache
+C:\Users\dina7\Documents\GitHub\PhotoFiltres\BitmapFiltres\obj\Debug\BitmapFiltres.csproj.CoreCompileInputs.cache
+C:\Users\dina7\Documents\GitHub\PhotoFiltres\BitmapFiltres\obj\Debug\BitmapFiltres.exe
+C:\Users\dina7\Documents\GitHub\PhotoFiltres\BitmapFiltres\obj\Debug\BitmapFiltres.pdb
+C:\Users\dina7\Documents\GitHub\PhotoFiltres\BitmapFiltres\obj\Debug\BitmapFiltres.BitmapFiltres.resources

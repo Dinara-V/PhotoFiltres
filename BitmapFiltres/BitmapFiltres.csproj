@@ -49,20 +49,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BlackAndWhite.cs" />
+    <Compile Include="Blue.cs" />
     <Compile Include="ChangeImage.cs" />
-    <Compile Include="BirmapFiltres.cs">
+    <Compile Include="BitmapFiltres.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BirmapFiltres.Designer.cs">
-      <DependentUpon>BirmapFiltres.cs</DependentUpon>
+    <Compile Include="BitmapFiltres.Designer.cs">
+      <DependentUpon>BitmapFiltres.cs</DependentUpon>
     </Compile>
     <Compile Include="IFilter.cs" />
+    <Compile Include="Mirror.cs" />
     <Compile Include="Negative.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Red.cs" />
     <Compile Include="ShadesOfGray.cs" />
-    <EmbeddedResource Include="BirmapFiltres.resx">
-      <DependentUpon>BirmapFiltres.cs</DependentUpon>
+    <EmbeddedResource Include="BitmapFiltres.resx">
+      <DependentUpon>BitmapFiltres.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

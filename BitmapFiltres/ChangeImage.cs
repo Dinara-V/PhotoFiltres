@@ -21,5 +21,10 @@ namespace BitmapFiltres
         {
             pictureBox.Image = filter.Apply();
         }
+
+        public Image GetImage
+        {
+            get { return pictureBox.Image; }
+        }
     }
 }
