@@ -28,81 +28,77 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            this.photoPictureBox = new System.Windows.Forms.PictureBox();
+            this.openFileButton = new System.Windows.Forms.Button();
+            this.filtresTrackBar = new System.Windows.Forms.TrackBar();
+            this.openFileDialogForOpenButton = new System.Windows.Forms.OpenFileDialog();
+            this.saveFileDialogForSaveButton = new System.Windows.Forms.SaveFileDialog();
+            this.saveButton = new System.Windows.Forms.Button();
+            this.ChooseFilterLabel = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.photoPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.filtresTrackBar)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // photoPictureBox
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(13, 13);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(354, 359);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.photoPictureBox.Location = new System.Drawing.Point(13, 13);
+            this.photoPictureBox.Name = "photoPictureBox";
+            this.photoPictureBox.Size = new System.Drawing.Size(354, 359);
+            this.photoPictureBox.TabIndex = 0;
+            this.photoPictureBox.TabStop = false;
             // 
-            // button1
+            // openFileButton
             // 
-            this.button1.Location = new System.Drawing.Point(387, 13);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Открыть";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.openFileButton.Location = new System.Drawing.Point(387, 13);
+            this.openFileButton.Name = "openFileButton";
+            this.openFileButton.Size = new System.Drawing.Size(75, 23);
+            this.openFileButton.TabIndex = 1;
+            this.openFileButton.Text = "Открыть";
+            this.openFileButton.UseVisualStyleBackColor = true;
+            this.openFileButton.Click += new System.EventHandler(this.openFileButton_Click);
             // 
-            // trackBar1
+            // filtresTrackBar
             // 
-            this.trackBar1.Location = new System.Drawing.Point(387, 72);
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(104, 45);
-            this.trackBar1.TabIndex = 2;
-            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
+            this.filtresTrackBar.Location = new System.Drawing.Point(387, 72);
+            this.filtresTrackBar.Name = "filtresTrackBar";
+            this.filtresTrackBar.Size = new System.Drawing.Size(104, 45);
+            this.filtresTrackBar.TabIndex = 2;
+            this.filtresTrackBar.Scroll += new System.EventHandler(this.trackBar1_Scroll);
             // 
-            // openFileDialog1
+            // saveButton
             // 
-            this.openFileDialog1.FileName = "openFileDialog1";
+            this.saveButton.Location = new System.Drawing.Point(387, 123);
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(75, 23);
+            this.saveButton.TabIndex = 3;
+            this.saveButton.Text = "Сохранить";
+            this.saveButton.UseVisualStyleBackColor = true;
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
-            // button2
+            // ChooseFilterLabel
             // 
-            this.button2.Location = new System.Drawing.Point(387, 123);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Сохранить";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.ChooseFilterLabel.AutoSize = true;
+            this.ChooseFilterLabel.Location = new System.Drawing.Point(384, 56);
+            this.ChooseFilterLabel.Name = "ChooseFilterLabel";
+            this.ChooseFilterLabel.Size = new System.Drawing.Size(91, 13);
+            this.ChooseFilterLabel.TabIndex = 4;
+            this.ChooseFilterLabel.Text = "Выбрать фильтр";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(384, 56);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Выбрать фильтр";
-            // 
-            // BirmapFiltres
+            // BitmapFiltres
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(570, 450);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.trackBar1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.pictureBox1);
-            this.Name = "BirmapFiltres";
+            this.Controls.Add(this.ChooseFilterLabel);
+            this.Controls.Add(this.saveButton);
+            this.Controls.Add(this.filtresTrackBar);
+            this.Controls.Add(this.openFileButton);
+            this.Controls.Add(this.photoPictureBox);
+            this.Name = "BitmapFiltres";
             this.Text = "Bitmap Filtres";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.photoPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.filtresTrackBar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -110,13 +106,13 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TrackBar trackBar1;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox photoPictureBox;
+        private System.Windows.Forms.Button openFileButton;
+        private System.Windows.Forms.TrackBar filtresTrackBar;
+        private System.Windows.Forms.OpenFileDialog openFileDialogForOpenButton;
+        private System.Windows.Forms.SaveFileDialog saveFileDialogForSaveButton;
+        private System.Windows.Forms.Button saveButton;
+        private System.Windows.Forms.Label ChooseFilterLabel;
     }
 }
 

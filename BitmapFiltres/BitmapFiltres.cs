@@ -22,16 +22,16 @@ namespace BitmapFiltres
         private ChangeImage changeImage;
         private bool fileOpened = false;
         private bool filterApplied = false;
-        private void button1_Click(object sender, EventArgs e)
+        private void openFileButton_Click(object sender, EventArgs e)
         {
-            if(openFileDialog1.ShowDialog()==DialogResult.OK)
+            if(openFileDialogForOpenButton.ShowDialog()==DialogResult.OK)
             {
-                image = new Bitmap(openFileDialog1.FileName);
+                image = new Bitmap(openFileDialogForOpenButton.FileName);
                 fileOpened = true;
             }
             //image = new Bitmap("c:\\temp\\Photo.jpg");
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.Image = image;
+            photoPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+            photoPictureBox.Image = image;
             filtres= new List<IFilter>();
             filtres.Add(new Negative(image));
             filtres.Add(new BlackAndWhite(image));
@@ -39,35 +39,35 @@ namespace BitmapFiltres
             filtres.Add(new Mirror(image));
             filtres.Add(new Red(image));
             filtres.Add(new Blue(image));
-            trackBar1.Maximum = filtres.Count-1;
+            filtresTrackBar.Maximum = filtres.Count-1;
         }
 
 
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            changeImage = new ChangeImage(pictureBox1);
+            changeImage = new ChangeImage(photoPictureBox);
         }
 
         private void trackBar1_Scroll(object sender, EventArgs e)
         {
             if (fileOpened)
             {
-                changeImage.applyFilter(filtres[trackBar1.Value]);
+                changeImage.applyFilter(filtres[filtresTrackBar.Value]);
                 filterApplied = true;
             }
             else
                 MessageBox.Show("Сначала откройте картинку");
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void saveButton_Click(object sender, EventArgs e)
         {
             if (filterApplied)
             {
-                saveFileDialog1.Filter = "Image Files(*.BMP)|*.BMP|Image Files(*.JPG)|*.JPG|Image Files(*.GIF)|*.GIF|Image Files(*.PNG)|*.PNG|All files (*.*)|*.*";
-                if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+                saveFileDialogForSaveButton.Filter = "Image Files(*.BMP)|*.BMP|Image Files(*.JPG)|*.JPG|Image Files(*.GIF)|*.GIF|Image Files(*.PNG)|*.PNG|All files (*.*)|*.*";
+                if (saveFileDialogForSaveButton.ShowDialog() == DialogResult.OK)
                 {
-                    changeImage.GetImage.Save(saveFileDialog1.FileName);
+                    changeImage.GetImage.Save(saveFileDialogForSaveButton.FileName);
                 }
             }
             else
